@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -200;
+  }
+}
+
+.animate-dash {
+  stroke-dasharray: 200;
+  animation: dash 2s linear infinite;
+}
